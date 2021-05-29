@@ -9,6 +9,9 @@ CoverMyMeds (CMM) is a healthcare information technology company that strives to
 **Data science based solutions:** We used support vector machines (SVMs) to address the first question and achieved an accuracy of ~93%. We tested the robustness of the model by employing a precision recall curve and also ran analysis to test the computational time needed for training the model.  We used recurring neural networks (RNNs) and time series analysis based on Holt-winters’ seasonality method to forecast PA volume from the existing data
 
 ## 1. Predicting approval of claims based on drug type and payer (Bhargava Nemmaru, Apostolos Zournas)
+### 1. Predicting approval of claims
+### 2. Predicting approval of a PA
+We used a feed-forward neural net to predict whether a rejected claim would be approved due to a PA. We did this with 74% accuracy. 
 
 ## 2. Forecasting short- and long-term PA volume based on historical data (Diego Prado, Apostolos Zournas)
 ### Exponential Smoothing Model using Holt-Winters' Additive Seasonality Method
@@ -17,6 +20,7 @@ Using the provided data sets of claim results and dates of claims, we created a 
 <br>
 **Summary outcome:** Model allows prediction of long-term PA and claim volume with good accuracy and short term with less accuracy but ignores variation from holidays
 ### Recurring Neural Net
+We implemented an RNN to predict the total claims, claims approved and PAs approved. The RNN takes as an input the variable we want to predict for 50 days and predicts the same variable for the next 7 days. It predicts accurately for these parameters, but cannot make long-term predictions, and so cannot predict the long-term, yearly seasonality as accurately.
 
 ## Stakeholder value propositions: 
 There are four key stakeholders in this business model: (i) CoverMyMeds (ii) healthcare providers (iii) pharmacies (iv) patients. The above-mentioned problem statements were chosen based on their potential to deliver value to stakeholders. For instance, our first solution based on SVMs allows healthcare providers to assess the situation and assign an ePA seamlessly, which saves hassles both for physicians and eventually the patients. CMM’s revenue model is based on the sale of ePAs and forecasting the ePA volume could be a great indicator of short-term and long-term revenue. In addition, this can also allow for hypothesis testing of new business and marketing strategies. 
