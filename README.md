@@ -10,6 +10,7 @@ CoverMyMeds (CMM) is a healthcare information technology company that strives to
 
 ## 1. Predicting approval of claims based on drug type and payer (Bhargava Nemmaru, Apostolos Zournas)
 ### 1. Predicting approval of claims
+We take drug type and payer information as an input vector and return a variable indicating whether or not the pharmacy claim will be approved
 ### 2. Predicting approval of a PA
 We used a feed-forward neural net to predict whether a rejected claim would be approved due to a PA. We did this with 74% accuracy. 
 
