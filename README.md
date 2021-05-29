@@ -1,6 +1,6 @@
 # Simba-and-Co
 Simba and Co project for Erdos Institute 2021 Bootcamp: Cover My Meds <br>
-Apostolos Zournas, Diego Prado, Bhargava Nemmaru
+By: Apostolos Zournas, Diego Prado, Bhargava Nemmaru
 ## Problem Statement
 CoverMyMeds (CMM) is a healthcare information technology company that strives to ‘help patients get the medication they need’, by automating the process of prior authorizations (PA). According to a report by Health Affairs, prior authorizations cost between $23 to $31 billion USD, including the time spent by healthcare providers to fill out these forms and leading to reduced patient outcomes. CMM addresses the need to simplify this process by providing electronic PA (ePA) forms in lieu of a complicated application process which would otherwise require coordination between care providers, insurance companies, pharmacies, and the patients. The success of this service has led to generation of rich data sets which can be harnessed to better serve patients and their respective healthcare providers, while streamlining CMM’s business processes. This study focused on addressing two questions, using various data science tools:
 1. Predicting whether or not a claim will be approved, based on drug type and payer information
