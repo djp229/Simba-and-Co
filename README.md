@@ -8,9 +8,9 @@ CoverMyMeds (CMM) is a healthcare information technology company that strives to
 
 **Data science based solutions:** We used support vector machines (SVMs) to address the first question and achieved an accuracy of ~93%. We tested the robustness of the model by employing a precision recall curve and also ran analysis to test the computational time needed for training the model.  We used recurring neural networks (RNNs) and time series analysis based on Holt-winters’ seasonality method to forecast PA volume from the existing data
 
-## 1. Predicting approval of claims based on drug type and payer
+## 1. Predicting approval of claims based on drug type and payer (Bhargava Nemmaru, Apostolos Zournas)
 
-## 2. Forecasting short- and long-term PA volume based on historical data
+## 2. Forecasting short- and long-term PA volume based on historical data (Diego Prado, Apostolos Zournas)
 ### Exponential Smoothing Model using Holt-Winters' Additive Seasonality Method
 Using the provided data sets of claim results and dates of claims, we created a time series dataframe to forecast short-term and long-term PA volume. We observed a layer of seasonality per week as well as per year; we also observed a trend of increased volume over time. As we are limited to only three years of data, we restricted our analysis to seasonality per week. Using the Holt-Winters’ seasonality method for triple exponential smoothing, we created an additive model of time series fit and forecasting. This method is ideal for modeling time-series data with differing trends over time and a seasonality. We observed that this model could fit the overall data rather well and, with the exception of holidays, could forecast PA volume up to ~180 days. However, due to weekly, monthly, and yearly variations, this model appears to be more efficient at forecasting long-term PA volume rather than shorter changes
 <br>
